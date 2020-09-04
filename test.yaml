@@ -3,8 +3,9 @@
   hosts: ubuntu
 
   tasks:
-       - name: install Apache webserver
-         apt: name=apache2  state=latest
+       - name: Install Nginx
+         apt: pkg=nginx state=latest
 
-       - name: restart apache
-         service: name=apache2 state=restarted
+       - name: Restart Nginx Service
+         service: name=nginx  state=restarted
+
