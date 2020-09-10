@@ -1,6 +1,6 @@
 ---
 - name: install Apache webserver
-  hosts: all
+  hosts: ubuntu
 
   tasks:
        - name: Install Nginx
